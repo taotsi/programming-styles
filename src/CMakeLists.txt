@@ -15,7 +15,7 @@ target_compile_options(style PRIVATE
 )
 
 set_target_properties(style
-  PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}
+  PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}
 )
 
 
@@ -36,5 +36,5 @@ target_compile_options(style_app PRIVATE
 target_link_libraries(style_app PRIVATE style)
 
 set_target_properties(style_app
-  PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}
+  PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}
 )
